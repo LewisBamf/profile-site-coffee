@@ -1,9 +1,11 @@
 :root {
-    --bgcl: hsl(0, 0%, 96%);
+    --blue-color: hsl(30, 30%, 70%);
     --seccondary-color: hsl(0, 84%, 64%);
-    --blue-color: hsl(210, 32%, 28%);
+    --bgcl: hsl(30, 45%, 30%);
     --Lightblue-color: hsl(210, 32%, 50%);
-    --dark-color: hsl(0, 0%, 28%);
+    --dark-color: hsl(0, 0%, 7%);
+    --coffee-color: hsl(30, 60%, 40%); /* Adjust hue, saturation, and lightness for a warm coffee color */
+    --rustic-color: hsl(30, 45%, 30%);
 }
 
 .gridPOS{
@@ -37,11 +39,51 @@
     align-items: center;
     overflow: hidden;
 }
+
+
+
 .main-title {
     font-size: 60px;
     justify-self: center;
     align-self: center;
     color: var(--bgcl);
     transition: all 0.8s ease;
+    z-index: 1;
 }
 
+.coffee-text{
+    font-size: 60px;
+    justify-self: center;
+    align-self: center;
+    color: var(--bgcl);
+    font-style: normal;
+    font-stretch: expanded;
+    transition: all 0s ease;
+    z-index: 1;
+}
+
+.grid-item:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em;
+    transition: all 0.5s ease;
+    z-index: 5;
+}
+
+.grid-item:nth-child(2){
+    grid-row: 2;
+    overflow: visible;
+}
+
+.coffee-cup{
+    width: 50%;
+    z-index: 500;
+    margin-top: -12%;
+    fill: var(--coffee-color);
+}
+
+.steam{
+    width: 50%;
+    z-index: 499;
+    margin-top: -30%;
+}

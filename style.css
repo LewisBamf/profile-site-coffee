@@ -1,9 +1,12 @@
 :root {
-    --bgcl: hsl(0, 0%, 96%);
-    --seccondary-color: hsl(0, 84%, 64%);
-    --blue-color: hsl(210, 32%, 28%);
-    --Lightblue-color: hsl(210, 32%, 50%);
-    --dark-color: hsl(0, 0%, 7%);
+  --blue-color: hsl(30, 30%, 70%);
+  --seccondary-color: hsl(0, 84%, 64%);
+  --bgcl: hsl(30, 45%, 30%);
+  --Lightblue-color: hsl(210, 32%, 50%);
+  --dark-color: hsl(0, 0%, 7%);
+  --coffee-color: hsl(30, 60%, 40%); /* Adjust hue, saturation, and lightness for a warm coffee color */
+  --rustic-color: hsl(30, 45%, 30%); /* Adjust hue and saturation for a rustic brown color */
+
 }
 
 * {
@@ -187,4 +190,8 @@ body{
     .menu-text{
       color: var(--blue-color);
       font-size: 40px;
+    }
+
+    h1{
+      text-shadow: 0px 0px 5px rgba(255, 247, 236, 0.4);
     }
